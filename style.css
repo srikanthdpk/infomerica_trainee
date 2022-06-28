@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.t-body{
+background-image: url(./images/backgroung-png.png);
+background-size: cover;
+background-position: center;
+box-sizing: border-box;
+}
+#header{
+    font-family: 'Roboto Slab', serif;   
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 150px;
+    height: 50px;
+}
+.logo{
+    margin-left: 10px;
+}
+ul{
+  display:flex;
+  }
+  li{
+    background-color: ;
+    margin-right: 20px;
+    list-style-type: none;
+  }
+  .menu ul li a{
+    text-decoration: none;
+    font-size: large;
+    color: rgb(219, 193, 232);
+    padding: 3px;
+    margin: 5px;
+  }
+ .menu ul ul{
+    position: absolute;     
+    display: none;
+  }
+  .menu ul li:hover>ul {
+    display: block;
+  }
+  .menu ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+  }
+  .menu ul li a:hover{
+    background-color: rgb(188, 115, 237);
+    color: rgb(176, 0, 179);
+    border: none;
+    border-radius: 4px;
+  }
+
+  .section{
+    width: auto;
+    height: 500px;
+    margin-top: 20px;
+    display: flex;
+   
+  }
+  .sec-1,.sec-2{
+    display: flex;
+  }
+  .sec-h4{
+    color: white;
+    margin-left: 20px;
+    background: linear-gradient(60deg,green 20%,red 50%);
+    padding: 3px;
+    width: 300px;
+    border-radius: 20px;
+    
+  }
+  .btn-warning{
+    margin-left: 30px;
+  }
+  
+#frame{
+  width:450px;
+    height:400px;
+    margin-left: 29px;
+    margin-top: 50px;
+    align-items: center;
+    background: transparent;
+    border: 1px solid dark;
+    border-radius: 25px;
+}
+  .footer{
+background-color: rgb(40, 47, 47);
+color: white;
+  }
+  .links{
+    display: flex;
+    flex-basis: 30px;
+  }
+  .links h4{
+    color: aquamarine;
+    font-family: 'Roboto Slab', serif;
+  }
+  .social-links a{
+      color:rgb(9, 219, 9);
+      font-size: large;
+ }
+ .social-links a:hover{
+    color: aliceblue;
+ }
+ .data{
+    margin-left: 35px;
+    padding: 10px;
+    color: rgb(119, 187, 247);
+ }
+ .vid{
+    margin-top: 10px;
+    padding: 10px;
+ }
+
+
+
+
+
+ /*hyd-branch.css*/
+ .hyd-branch {
+display: flex;
+position: inherit;
+
+ }
+ .branch{
+  padding: 4px;
+  margin: 5px;
+ }
+
+ .adress p{
+  color: aliceblue;
+ }
+ .google{
+  margin-top:20px ;
+ }
+
+  

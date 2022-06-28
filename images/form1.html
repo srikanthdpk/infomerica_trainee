@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+form{
+    border:1px solid darkcyan;
+    text-align:center;
+    width:250px;
+    height:350px;
+    border-radius: 20px;
+    box-shadow: 5px 4px 10px darkcyan;
+    }
+    .fr{
+       position: absolute;
+        align-items: center;
+    }
+    div{
+    margin:10px;
+    }
+    #msg{
+        color: red;
+    }
+    #aud{
+        margin-top: 10px;
+        
+    }
+    </style>
+    </head>
+  <!--body-->  
+     <body>
+         <div class="fr">
+    <form>
+        <h4>Registration Form</h4>        
+        <div>
+        Name:
+        <div><input id="sname" type="text" placeholder="Enter Your Name">
+            <div id="msg"> </div>
+        </div>
+        </div>
+        <div>
+        Mobile Number:
+        <div><input id="num" type="number" placeholder="+91 Mobile No"></div>
+        <div id="msg1"></div>
+        </div>
+        <div>
+        Email:
+        <div><input id="mail" type="text" placeholder="E-mail"></div>
+        <div id="msg2"></div>
+        </div>
+        <div>
+        <button class="btn btn-primary" type="button" onclick="submitclick()" data-toggle="modal" data-target="#productdetailsmodel">Registration</button>
+        </div></form>
+
+
+        <div class="modal" id="productdetailsmodal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-headeer">
+                        <h3 class="modal-title">Product Details</h3>
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-hover">
+                            <colgroup span="1" class="bg-warning"></colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>NAme</td>
+                                    <td id="lblName"></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Mobile number</td>
+                                    <td id="lblnumber"></td>
+                                </tr>
+
+                                <tr>
+                                    <td>E-mail</td>
+                                    <td id="lblmail"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>          
+function submitclick(){
+                document.getElementById("lblName").innerHTML=document.getElementById("sname").value;
+                document.getElementById("lblnumber").innerHTML=document.getElementById("num").value;
+                document.getElementById("lblmail").innerHTML=document.getElementById("mail").value;   
+}         
+               </script>
+            
+        </body>
+    </html>
